@@ -50,6 +50,7 @@ class WelcomePage extends StatelessWidget {
                     ),
                   ),
                   onPressed: () { // ketika button di klik
+                    quizBrain.resetQuiz(); // memastikan quiz dimulai dari 0
                     Navigator.push( // diarahkan ke WellQuiz/main.dart
                       context,
                       MaterialPageRoute(builder: (context) => WellQuiz()),
